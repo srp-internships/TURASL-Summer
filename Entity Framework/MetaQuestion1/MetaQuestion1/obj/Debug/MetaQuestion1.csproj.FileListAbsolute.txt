@@ -1,0 +1,8 @@
+C:\Users\Admin\source\repos\TURASL-Summer\Entity Framework\MetaQuestion1\MetaQuestion1\obj\Debug\MetaQuestion1.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\TURASL-Summer\Entity Framework\MetaQuestion1\MetaQuestion1\obj\Debug\MetaQuestion1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Admin\source\repos\TURASL-Summer\Entity Framework\MetaQuestion1\MetaQuestion1\obj\Debug\MetaQuestion1.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\TURASL-Summer\Entity Framework\MetaQuestion1\MetaQuestion1\bin\Debug\MetaQuestion1.exe.config
+C:\Users\Admin\source\repos\TURASL-Summer\Entity Framework\MetaQuestion1\MetaQuestion1\bin\Debug\MetaQuestion1.exe
+C:\Users\Admin\source\repos\TURASL-Summer\Entity Framework\MetaQuestion1\MetaQuestion1\bin\Debug\MetaQuestion1.pdb
+C:\Users\Admin\source\repos\TURASL-Summer\Entity Framework\MetaQuestion1\MetaQuestion1\obj\Debug\MetaQuestion1.exe
+C:\Users\Admin\source\repos\TURASL-Summer\Entity Framework\MetaQuestion1\MetaQuestion1\obj\Debug\MetaQuestion1.pdb

@@ -1,0 +1,15 @@
+C:\Users\Admin\source\repos\FluentAPI\FluentAPI\bin\Debug\FluentAPI.exe.config
+C:\Users\Admin\source\repos\FluentAPI\FluentAPI\bin\Debug\FluentAPI.exe
+C:\Users\Admin\source\repos\FluentAPI\FluentAPI\bin\Debug\FluentAPI.pdb
+C:\Users\Admin\source\repos\FluentAPI\FluentAPI\bin\Debug\EntityFramework.dll
+C:\Users\Admin\source\repos\FluentAPI\FluentAPI\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\source\repos\FluentAPI\FluentAPI\bin\Debug\EntityFramework.xml
+C:\Users\Admin\source\repos\FluentAPI\FluentAPI\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\source\repos\FluentAPI\FluentAPI\obj\Debug\FluentAPI.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\FluentAPI\FluentAPI\obj\Debug\FluentAPI.csproj.SuggestedBindingRedirects.cache
+C:\Users\Admin\source\repos\FluentAPI\FluentAPI\obj\Debug\FluentAPI.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\FluentAPI\FluentAPI\obj\Debug\FluentAPI.csproj.CopyComplete
+C:\Users\Admin\source\repos\FluentAPI\FluentAPI\obj\Debug\FluentAPI.exe
+C:\Users\Admin\source\repos\FluentAPI\FluentAPI\obj\Debug\FluentAPI.pdb
+C:\Users\Admin\source\repos\FluentAPI\FluentAPI\obj\Debug\FluentAPI.Migrations.InitialModel.resources
+C:\Users\Admin\source\repos\FluentAPI\FluentAPI\obj\Debug\FluentAPI.csproj.GenerateResource.cache

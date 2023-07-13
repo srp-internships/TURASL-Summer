@@ -1,0 +1,16 @@
+C:\Users\Admin\source\repos\DataAnnotations\DataAnnotations\bin\Debug\DataAnnotations.exe.config
+C:\Users\Admin\source\repos\DataAnnotations\DataAnnotations\bin\Debug\DataAnnotations.exe
+C:\Users\Admin\source\repos\DataAnnotations\DataAnnotations\bin\Debug\DataAnnotations.pdb
+C:\Users\Admin\source\repos\DataAnnotations\DataAnnotations\bin\Debug\EntityFramework.dll
+C:\Users\Admin\source\repos\DataAnnotations\DataAnnotations\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\source\repos\DataAnnotations\DataAnnotations\bin\Debug\EntityFramework.xml
+C:\Users\Admin\source\repos\DataAnnotations\DataAnnotations\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\source\repos\DataAnnotations\DataAnnotations\obj\Debug\DataAnnotations.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\DataAnnotations\DataAnnotations\obj\Debug\DataAnnotations.csproj.SuggestedBindingRedirects.cache
+C:\Users\Admin\source\repos\DataAnnotations\DataAnnotations\obj\Debug\DataAnnotations.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\DataAnnotations\DataAnnotations\obj\Debug\DataAnnotations.csproj.CopyComplete
+C:\Users\Admin\source\repos\DataAnnotations\DataAnnotations\obj\Debug\DataAnnotations.exe
+C:\Users\Admin\source\repos\DataAnnotations\DataAnnotations\obj\Debug\DataAnnotations.pdb
+C:\Users\Admin\source\repos\DataAnnotations\DataAnnotations\obj\Debug\DataAnnotations.Migrations.InitialModel.resources
+C:\Users\Admin\source\repos\DataAnnotations\DataAnnotations\obj\Debug\DataAnnotations.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\DataAnnotations\DataAnnotations\obj\Debug\DataAnnotations.Migrations.AddAnnotationsToCourseTable.resources
