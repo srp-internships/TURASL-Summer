@@ -38,5 +38,17 @@ namespace dotnet_rpg.Controllers
             }
             return Ok(response);
         }
+
+        [Authorize(Roles = "Admin")]
+        [HttpPut("Promote")]
+        public async Task<ActionResult<ServiceResponse<GetUserDto>>> Promote(string username)
+        {
+            var response = await _authRepository.Promote(username);
+            if (!response.Success)
+            {
+                return BadRequest(response);
+            }
+            return Ok(response);
+        }
     }
 }

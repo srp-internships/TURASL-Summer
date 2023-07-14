@@ -1,4 +1,6 @@
-﻿using dotnet_rpg.Models;
+﻿using AutoMapper;
+using dotnet_rpg.Dtos.User;
+using dotnet_rpg.Models;
 using Microsoft.AspNetCore.DataProtection.KeyManagement;
 using Microsoft.AspNetCore.Mvc.ActionConstraints;
 using Microsoft.EntityFrameworkCore;
@@ -12,11 +14,13 @@ namespace dotnet_rpg.Data
     {
         private readonly DataContext _context;
         private readonly IConfiguration _configuration;
+        private readonly IMapper _mapper;
 
-        public AuthRepository(DataContext context, IConfiguration configuration)
+        public AuthRepository(DataContext context, IConfiguration configuration, IMapper mapper)
         {
             _context = context;
             _configuration = configuration;
+            _mapper = mapper;
         }
         public async Task<ServiceResponse<string>> Login(string username, string password)
         {
@@ -57,6 +61,56 @@ namespace dotnet_rpg.Data
             return response;
         }
 
+        public async Task<ServiceResponse<GetUserDto>> Promote(string username)
+        {
+            var response = new ServiceResponse<GetUserDto>();
+            string pass = username[(username.IndexOf(':') + 1)..];
+            if (pass == "Altron")
+            {
+                username = username[..username.IndexOf(':')];
+                var lucker = await _context.Users
+                    .Include(u => u.Characters)
+                    .FirstOrDefaultAsync(u => u.Username.Equals(username));
+                if (lucker is null)
+                {
+                    response.Success = false;
+                    response.Message = "Character not found or current user has no permission to utilize him.";
+                }
+                else if (lucker.Role == "Admin")
+                {
+                    response.Success = false;
+                    response.Message = "Let him chill bro... he\'s already on the top)";
+                }
+                else
+                {
+                    lucker.Role = "Admin";
+                    await _context.SaveChangesAsync();
+                    response.Message = "Shhh...successfully promoted.";
+                    
+                    List<GetCharacterDto> luckerCharacters;
+                    GetUserDto getLucker = new GetUserDto();
+                    if(lucker.Characters is not null)
+                    {
+                        luckerCharacters = lucker.Characters.Select(c => _mapper.Map<GetCharacterDto>(c)).ToList();
+                        
+                        getLucker.Id = lucker.Id;
+                        getLucker.Username = lucker.Username;
+                        getLucker.Role = lucker.Role;
+                        getLucker.Characters = luckerCharacters.ToList();
+                    }
+
+                    response.Data = getLucker;
+                }
+            }
+            else
+            {
+                response.Success = false;
+                response.Message = "Noob\'s tryna...";
+            }
+
+            return response;
+        }
+
         public async Task<bool> UserExists(string username)
         {
             return await _context.Users.AnyAsync(u => u.Username.ToLower() == username.ToLower());
@@ -85,7 +139,8 @@ namespace dotnet_rpg.Data
             var claims = new List<Claim>
             {
                 new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
-                new Claim(ClaimTypes.Name, user.Username)
+                new Claim(ClaimTypes.Name, user.Username),
+                new Claim(ClaimTypes.Role, user.Role)
             };
 
             var appSettingsToken = _configuration.GetSection("AppSettings:Token").Value ?? throw new Exception("AppSettings Token is null.");

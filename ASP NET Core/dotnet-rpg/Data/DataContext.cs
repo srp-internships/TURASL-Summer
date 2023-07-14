@@ -10,11 +10,17 @@ namespace dotnet_rpg.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Skill>().HasData(
+            modelBuilder.Entity<Skill>()
+                .HasData(
                 new Skill { Id = 1, Name = "Summon Fireball", Damage = 60 },
                 new Skill { Id = 2, Name = "Summon Tornado", Damage = 85 },
                 new Skill { Id = 3, Name = "Summon Meteor", Damage = 150 }
                 );
+
+            modelBuilder.Entity<User>()
+                .Property(u => u.Role)
+                .IsRequired()
+                .HasDefaultValue("Player");
         }
 
         public DbSet<Character> Characters => Set<Character>();

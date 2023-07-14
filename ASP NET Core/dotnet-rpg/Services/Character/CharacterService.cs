@@ -19,6 +19,8 @@ namespace dotnet_rpg.Services.Character
 
         private int GetUserId() => int.Parse(_httpContextAccessor.HttpContext!.User.
             FindFirstValue(ClaimTypes.NameIdentifier)!);
+        private string GetUserRole() => _httpContextAccessor.HttpContext!.User.
+            FindFirstValue(ClaimTypes.Role)!;
 
         public async Task<ServiceResponse<List<GetCharacterDto>>> AddNewCharacter(AddCharacterDto character)
         {
@@ -47,7 +49,10 @@ namespace dotnet_rpg.Services.Character
             var serviceResponse = new ServiceResponse<List<GetCharacterDto>>();
             try
             {
-                var dbCharacters = await _context.Characters.Where(c => c.User!.Id == GetUserId()).Include(c => c.User).ToListAsync();
+                var dbCharacters = GetUserRole() == "Admin"
+                        ? await _context.Characters.ToListAsync()
+                        : await _context.Characters.Where(c => c.User!.Id == GetUserId()).Include(c => c.User).ToListAsync();
+
                 serviceResponse.Data = dbCharacters.Where(c => c.User!.Id.Equals(GetUserId())).Select(c => _mapper.Map<GetCharacterDto>(c)).ToList();
                 serviceResponse.Message = "Characters successfully obatined.";
             }
