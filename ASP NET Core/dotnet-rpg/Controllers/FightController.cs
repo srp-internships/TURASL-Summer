@@ -17,7 +17,7 @@ namespace dotnet_rpg.Controllers
             _fightService = fightService;
         }
 
-        [HttpPost("Weapon")]
+        [HttpPost("WeaponAttack")]
         public async Task<ActionResult<ServiceResponse<WeaponAttackResultDto>>> WeaponAttack(WeaponAttackDto weaponAttack)
         {
             var response = await _fightService.WeaponAttack(weaponAttack);
@@ -28,7 +28,7 @@ namespace dotnet_rpg.Controllers
             return Ok(response);
         }
 
-        [HttpPost("Skill")]
+        [HttpPost("SkillAttack")]
         public async Task<ActionResult<ServiceResponse<SkillAttackResultDto>>> SkillAttack(SkillAttackDto skillAttack)
         {
             var response = await _fightService.SkillAttack(skillAttack);
@@ -51,11 +51,10 @@ namespace dotnet_rpg.Controllers
         }
 
         [AllowAnonymous]
-        [HttpGet("Score")]
+        [HttpGet("ScoreList")]
         public async Task<ActionResult<ServiceResponse<List<HighScoreDto>>>> Score()
         {
             var response = await _fightService.Score();
-
             if (!response.Success)
             {
                 return BadRequest(response);

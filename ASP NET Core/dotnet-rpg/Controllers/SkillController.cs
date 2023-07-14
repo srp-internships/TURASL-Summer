@@ -18,7 +18,7 @@ namespace dotnet_rpg.Controllers
             _skillService = skillService;
         }
 
-        [HttpPost("AddNewSkill")]
+        [HttpPost("AddNew")]
         public async Task<ActionResult<ServiceResponse<List<GetSkillDto>>>> AddNewSkill(AddSkillDto newSkill)
         {
             var response = await _skillService.AddNewSkill(newSkill);

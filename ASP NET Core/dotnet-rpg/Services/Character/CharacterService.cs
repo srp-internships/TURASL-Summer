@@ -49,6 +49,7 @@ namespace dotnet_rpg.Services.Character
             {
                 var dbCharacters = await _context.Characters.Where(c => c.User!.Id == GetUserId()).Include(c => c.User).ToListAsync();
                 serviceResponse.Data = dbCharacters.Where(c => c.User!.Id.Equals(GetUserId())).Select(c => _mapper.Map<GetCharacterDto>(c)).ToList();
+                serviceResponse.Message = "Characters successfully obatined.";
             }
             catch (Exception ex)
             {
@@ -68,11 +69,8 @@ namespace dotnet_rpg.Services.Character
                     .Include(c => c.Skills)
                     .FirstOrDefaultAsync(c => c.User!.Id.Equals(GetUserId()) && c.Id.Equals(id));
                 if (dbCharacter is null)
-                {
-                    serviceResponse.Success = false;
-                    serviceResponse.Message = "Character not found";
-                    return serviceResponse;
-                }
+                    throw new Exception("Character not found or current user has no permission to utilize him.");
+
                 serviceResponse.Data = _mapper.Map<GetCharacterDto>(dbCharacter);
             }
             catch (Exception ex)
@@ -91,7 +89,7 @@ namespace dotnet_rpg.Services.Character
             {
                 var character = await _context.Characters.FirstOrDefaultAsync(c => c.User!.Id.Equals(GetUserId()) && c.Id.Equals(updatedCharacter.Id));
                 if (character is null)
-                    throw new Exception("Character with given ID was not found!");
+                    throw new Exception("Character not found or current user has no permision to utilize him.");
 
                 character.Name = updatedCharacter.Name;
                 character.HitPoints = updatedCharacter.HitPoints;
@@ -124,7 +122,7 @@ namespace dotnet_rpg.Services.Character
             {
                 var character = await _context.Characters.FirstOrDefaultAsync(c => c.User!.Id.Equals(GetUserId()) && c.Id.Equals(id));
                 if (character is null)
-                    throw new Exception("Character with given ID was not found!");
+                    throw new Exception("Character not found or current user has no permision to utilize him.");
 
                 _context.Remove(character);
 

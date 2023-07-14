@@ -30,15 +30,10 @@ namespace dotnet_rpg.Services.Weapon
                 var character = await _context.Characters
                     .FirstOrDefaultAsync(c =>
                     c.Id.Equals(newWeapon.CharacterId)
-                     && c.User!.Id == int.Parse(_httpContextAccessor.HttpContext!.User
-                        .FindFirstValue(ClaimTypes.NameIdentifier)!));
+                     && c.User!.Id == GetUserId());
 
                 if (character is null)
-                {
-                    response.Success = false;
-                    response.Message = "Character not found.";
-                    return response;
-                }
+                    throw new Exception("Character not found or current user has no permission to utilize him.");
 
                 var weapon = new Models.Weapon
                 {
@@ -60,6 +55,12 @@ namespace dotnet_rpg.Services.Weapon
             }
 
             return response;
+        }
+
+        private int GetUserId()
+        {
+            return int.Parse(_httpContextAccessor.HttpContext!.User
+                                    .FindFirstValue(ClaimTypes.NameIdentifier)!);
         }
     }
 }

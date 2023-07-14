@@ -29,11 +29,7 @@ namespace dotnet_rpg.Services.Skill
                                 && s.Damage.Equals(newSkill.Damage));
 
                 if (skillAlreadyExists)
-                {
-                    response.Success = false;
-                    response.Message = "Skill alreay exists.";
-                    return response;
-                }
+                    throw new Exception("Skill alreay exists.");
 
                 var skill = _mapper.Map<Models.Skill>(newSkill);
 
@@ -65,7 +61,7 @@ namespace dotnet_rpg.Services.Skill
                 if (character is null)
                 {
                     response.Success = false;
-                    response.Message = "Character not found.";
+                    response.Message = "Character not found or current user has no permission to utilize him.";
                     return response;
                 }
 

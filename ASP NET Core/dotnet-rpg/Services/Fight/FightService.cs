@@ -27,10 +27,10 @@ namespace dotnet_rpg.Services.Fight
         private int GetUserId() => int.Parse(_httpContextAccessor.HttpContext!.User.
             FindFirstValue(ClaimTypes.NameIdentifier)!);
 
-        private static void DoWeaponAttack(Models.Character? attacker, Models.Character? opponent, out int damageToOpponent, out int damageToAttacker)
+        private static void DoWeaponAttack(Models.Character attacker, Models.Character opponent, out int damageToOpponent, out int damageToAttacker)
         {
-            damageToOpponent = attacker!.Weapon!.Damage + r.Next(-10, 10) - opponent!.Defense;
-            damageToAttacker = opponent!.Weapon!.Damage + r.Next(-10, 10) - attacker!.Defense;
+            damageToOpponent = attacker!.Weapon == null ? 0 : attacker!.Weapon!.Damage + r.Next(-10, 10) - opponent!.Defense;
+            damageToAttacker = opponent!.Weapon == null ? 0 : opponent!.Weapon!.Damage + r.Next(-10, 10) - attacker!.Defense;
             damageToOpponent = damageToOpponent < 0 ? 0 : damageToOpponent;
             damageToAttacker = damageToAttacker < 0 ? 0 : damageToAttacker;
 
@@ -59,26 +59,23 @@ namespace dotnet_rpg.Services.Fight
                     .Include(c => c.Weapon)
                     .FirstOrDefaultAsync(c => c.Id.Equals(weaponAttack.AttackerId) && c.User!.Id.Equals(GetUserId()));
 
-                if (attacker is null)
-                {
-                    response.Success = false;
-                    response.Message = "Character not found.";
-                    return response;
-                }
-
                 var opponent = await _context.Characters
                     .Include(c => c.Weapon)
                     .FirstOrDefaultAsync(c => c.Id.Equals(weaponAttack.OpponentId));
-                if (opponent is null)
+
+                if (opponent is null || attacker is null)
+                    throw new Exception("Character not found or current user has no permission to utilize him.");
+
+                else if (opponent == attacker)
                 {
                     response.Success = false;
-                    response.Message = "Opponent not found.";
+                    response.Message = "Masochist bro is tryna Suicido :-{";
                     return response;
                 }
 
-                DoWeaponAttack(attacker, opponent, out int damageToOpponent, out int damageToAttacker);
+                DoWeaponAttack(attacker, opponent!, out int damageToOpponent, out int damageToAttacker);
 
-                if (opponent.HitPoints <= 0)
+                if (opponent!.HitPoints <= 0)
                 {
                     opponent.HitPoints = 0;
                     response.Message = $"{attacker.Name} pwned {opponent.Name}\'s head for freee";
@@ -129,22 +126,21 @@ namespace dotnet_rpg.Services.Fight
                     .FirstOrDefaultAsync(c => c.Id.Equals(skillAttack.OpponentId));
 
                 if (opponent is null || attacker is null)
+                    throw new Exception("Character not found or current user has no permission to utilize him.");
+
+                else if (opponent == attacker)
                 {
                     response.Success = false;
-                    response.Message = "Character not found.";
+                    response.Message = "Masochist bro is tryna Suicido :-{";
                     return response;
                 }
 
                 var skill = attacker.Skills!.FirstOrDefault(s => s.Id.Equals(skillAttack.SkillId));
 
                 if (skill is null)
-                {
-                    response.Success = false;
-                    response.Message = $"{attacker.Name} doesn't know that skill.";
-                    return response;
-                }
+                    throw new Exception($"{attacker.Name} doesn't know that skill.");
 
-                int damage = DoSkillAttack(opponent, skill);
+                var damage = DoSkillAttack(opponent, skill);
 
                 if (opponent.HitPoints <= 0)
                 {
@@ -195,6 +191,7 @@ namespace dotnet_rpg.Services.Fight
                     .Include(c => c.Skills)
                     .Include(c => c.User)
                     .Where(c => newFight.CharacterIds.Contains(c.Id))
+                    .Distinct()
                     .ToListAsync();
                 characters = characters.ToList();
 
@@ -205,11 +202,7 @@ namespace dotnet_rpg.Services.Fight
                 }
 
                 if (!hasAuthorizedCharacter)
-                {
-                    response.Success = false;
-                    response.Message = "At least one of the fighters must be yours!";
-                    return response;
-                }
+                    throw new Exception("To organize a fight u must have at least one of your fighters in!");
 
                 var fightEnds = false;
 
@@ -259,7 +252,7 @@ namespace dotnet_rpg.Services.Fight
                         var coin = r.Next(2) == 0;
                         if (coin)
                         {
-                            weaponUsed = attacker.Weapon!.Name;
+                            weaponUsed = attacker.Weapon == null ? "hands" : attacker.Weapon!.Name;
                             DoWeaponAttack(attacker, currentOpponent, out int damageToOpponent, out int damageToAttacker);
                             response.Data!.FightLogs.Add(
                                 $"{attacker.Name} attacked {currentOpponent.Name} with his {weaponUsed}, " +
@@ -269,10 +262,18 @@ namespace dotnet_rpg.Services.Fight
                         else
                         {
                             var skills = attacker.Skills!;
-                            var currentSkill = skills[r.Next(skills.Count)];
-                            weaponUsed = currentSkill.Name;
-                            var damageDealt = DoSkillAttack(currentOpponent, currentSkill);
-
+                            int damageDealt;
+                            if (skills.Count == 0)
+                            {
+                                weaponUsed = "Incompetence";
+                                damageDealt = 0;
+                            }
+                            else
+                            {
+                                var currentSkill = skills[r.Next(skills.Count)];
+                                weaponUsed = currentSkill.Name;
+                                damageDealt = DoSkillAttack(currentOpponent, currentSkill);
+                            }
                             response.Data!.FightLogs.Add($"{attacker.Name} attacked {currentOpponent.Name} " +
                                 $"with skill: {weaponUsed} and dealt {damageDealt} damage.");
                         }
@@ -323,19 +324,16 @@ namespace dotnet_rpg.Services.Fight
             try
             {
                 var fighters = await _context.Characters
-                .Where(c => c.Fights > 0)
-                .OrderByDescending(c => c.Victories)
-                .ThenBy(c => c.Defense)
-                .ThenByDescending(c => c.Kills)
-                .ThenBy(c => c.Deaths)
-                .ToListAsync();
+                    .Where(c => c.Fights > 0)
+                    .OrderByDescending(c => c.Victories)
+                    .ThenBy(c => c.Defense)
+                    .ThenByDescending(c => c.Kills)
+                    .ThenBy(c => c.Deaths)
+                    .ToListAsync();
 
                 if (fighters is null)
-                {
-                    response.Success = false;
-                    response.Message = "No character had even a single fight!";
-                    return response;
-                }
+                    throw new Exception("No character had even a single fight!");
+
                 response.Data = fighters!.Select(f => _mapper.Map<HighScoreDto>(f)).ToList();
                 response.Message = $"Current WORLD Champion: {fighters[0].Name}";
             }

@@ -23,15 +23,10 @@ namespace dotnet_rpg.Data
             var response = new ServiceResponse<string>();
             var user = await _context.Users.FirstOrDefaultAsync(u => u.Username.ToLower().Equals(username.ToLower()));
 
-            if (user is null)
+            if (user is null || !VerifyPasswordHash(password, user.PasswordHash, user.PasswordSalt))
             {
                 response.Success = false;
-                response.Message = "User was not found.";
-            }
-            else if (!VerifyPasswordHash(password, user.PasswordHash, user.PasswordSalt))
-            {
-                response.Success = false;
-                response.Message = "Wrong password.";
+                response.Message = "Username or/and password are invalid.";
             }
             else
             {
@@ -58,6 +53,7 @@ namespace dotnet_rpg.Data
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
             response.Data = user.Id;
+            response.Message = "User was added with certain id displayed above ^";
             return response;
         }
 
