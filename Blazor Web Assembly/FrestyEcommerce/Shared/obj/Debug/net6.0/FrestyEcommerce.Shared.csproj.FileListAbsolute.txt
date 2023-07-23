@@ -1,0 +1,12 @@
+C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\Shared\bin\Debug\net6.0\FrestyEcommerce.Shared.deps.json
+C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\Shared\bin\Debug\net6.0\FrestyEcommerce.Shared.dll
+C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\Shared\bin\Debug\net6.0\FrestyEcommerce.Shared.pdb
+C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\Shared\obj\Debug\net6.0\FrestyEcommerce.Shared.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\Shared\obj\Debug\net6.0\FrestyEcommerce.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\Shared\obj\Debug\net6.0\FrestyEcommerce.Shared.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\Shared\obj\Debug\net6.0\FrestyEcommerce.Shared.AssemblyInfo.cs
+C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\Shared\obj\Debug\net6.0\FrestyEcommerce.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\Shared\obj\Debug\net6.0\FrestyEcommerce.Shared.dll
+C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\Shared\obj\Debug\net6.0\refint\FrestyEcommerce.Shared.dll
+C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\Shared\obj\Debug\net6.0\FrestyEcommerce.Shared.pdb
+C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\Shared\obj\Debug\net6.0\ref\FrestyEcommerce.Shared.dll

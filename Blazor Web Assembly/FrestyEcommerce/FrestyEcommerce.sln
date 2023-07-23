@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrestyEcommerce.Server", "Server\FrestyEcommerce.Server.csproj", "{AB2F8F06-8261-4651-A3D6-09DD41D85A5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrestyEcommerce.Server", "Server\FrestyEcommerce.Server.csproj", "{AB2F8F06-8261-4651-A3D6-09DD41D85A5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrestyEcommerce.Client", "Client\FrestyEcommerce.Client.csproj", "{DE5780D0-8D38-4B06-B565-9188AA69C865}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrestyEcommerce.Client", "Client\FrestyEcommerce.Client.csproj", "{DE5780D0-8D38-4B06-B565-9188AA69C865}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrestyEcommerce.Shared", "Shared\FrestyEcommerce.Shared.csproj", "{E6A2EEB4-49D8-4015-9194-BF69B0864B48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrestyEcommerce.Shared", "Shared\FrestyEcommerce.Shared.csproj", "{E6A2EEB4-49D8-4015-9194-BF69B0864B48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

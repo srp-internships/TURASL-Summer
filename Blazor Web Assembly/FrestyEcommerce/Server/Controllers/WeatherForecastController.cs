@@ -1,4 +1,3 @@
-using FrestyEcommerce.Shared;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FrestyEcommerce.Server.Controllers
