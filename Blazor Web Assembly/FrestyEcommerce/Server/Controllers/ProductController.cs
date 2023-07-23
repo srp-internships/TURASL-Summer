@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using FrestyEcommerce.Server.Data;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace FrestyEcommerce.Server.Controllers
 {
@@ -6,12 +8,19 @@ namespace FrestyEcommerce.Server.Controllers
     [ApiController]
     public class ProductController : ControllerBase
     {
-        private static List<Product> Products = new List<Product>
-        { };
+        private readonly DataContext _dataContext;
+
+        public ProductController(DataContext dataContext)
+        {
+            _dataContext = dataContext;
+        }
         [HttpGet]
         public async Task<ActionResult<List<Product>>> GetProduct()
         {
-            return Ok(Products);
+            var result = await _dataContext.Products.ToListAsync();
+            if (result is null)
+                return NotFound(result);
+            return Ok(result);
         }
     }
 }
