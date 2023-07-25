@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "gYLZ8DRxTC25Mh1QbPu6LRADYF4JxXz7ISWfNlh4nREuYcnRLUucMW4ukIamYauq8ox8hJYxf+xPvS58J8lWrA==",
+  "dgSpecHash": "Ks5QgbjMLvG6zOb3uhdv6z8TPSbCGlwg677L1/qHlRez+5L/I+SnqbBwfNB+xs3lAt38c3hNUNSzjwZixmApfA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Server\\FrestyEcommerce.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\blazored.localstorage\\4.3.0\\blazored.localstorage.4.3.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.19\\microsoft.aspnetcore.authorization.6.0.19.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.19\\microsoft.aspnetcore.components.6.0.19.nupkg.sha512",

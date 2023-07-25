@@ -7,6 +7,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
+      "Blazored.LocalStorage.dll": "sha256-Jq\/dS58mO5wtL2d0x\/FeAdDZ1bUTpTzPODJpBZUre\/4=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-cS22FAHmrDwLTAjlZCtQiBPLSkoaKRXJSQm7xk4FaBE=",
       "Microsoft.AspNetCore.Components.dll": "sha256-aFUXuxBgKshEkyvzJA8iKU0P+\/\/mEM1KFG+YJVs97f8=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-eP3tLMkdWuhMJ9GaHIuXGNbINEWgwiRqWQGUzdecjPM=",
@@ -196,15 +197,15 @@
       "mscorlib.dll": "sha256-j4L8eYEbpTL2UGB4uTT5qwkcqJsmB46NkVr5uesXgJI=",
       "netstandard.dll": "sha256-2M8m82GceNG8Z8I4dD74L7Tl4vwXdwXcVpYN80ouzQA=",
       "System.Private.CoreLib.dll": "sha256-dFxocfrY9q0E7UJ6nBlyNfnWYTyPu3RKzSggfRhoPJY=",
-      "FrestyEcommerce.Shared.dll": "sha256-qDndeoCKRL8DYo\/NblNn9FXJTQbgj2MWUCs7NhwGaHU=",
-      "FrestyEcommerce.Client.dll": "sha256-yrQHYi\/L0AaE0nePDrWew9W0\/QX\/\/6eLqoBgSGBRI3E="
+      "FrestyEcommerce.Shared.dll": "sha256-DjnFxxETlyIXWvui2dgzfcTIlShTMOJEsq91gdEXUac=",
+      "FrestyEcommerce.Client.dll": "sha256-2P7g\/QEoO4A8tpvcQ91SqS+F9xWYx3gHX8WVbmn9OBQ="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "FrestyEcommerce.Shared.pdb": "sha256-gY02\/v3qm1uGBtssB3vHUxG1xeVT1ci2+2uSdkzynzk=",
-      "FrestyEcommerce.Client.pdb": "sha256-\/5ZOYmTPh6jqGn6jqGaKv2nKTXcBE31V\/9CcGwrXJLk="
+      "FrestyEcommerce.Shared.pdb": "sha256-q16SmWAxowh5RfDvi3RmmHtcPw1JxyRH\/UozPd8nrqs=",
+      "FrestyEcommerce.Client.pdb": "sha256-LxsR\/xesA1\/yhn\/jnpCsQJljUeYfuY8LkvBUowLFNmg="
     },
     "runtime": {
       "dotnet.6.0.20.urm042ods6.js": "sha256-iXtnf0CK+zdIWjR0cpE38tWChIpNC6sO+aSQAW+aBQU=",
