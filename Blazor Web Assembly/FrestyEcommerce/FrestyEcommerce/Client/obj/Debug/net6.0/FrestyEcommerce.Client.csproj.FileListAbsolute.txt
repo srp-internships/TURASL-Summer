@@ -828,3 +828,6 @@ C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\Fr
 C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Client\obj\Debug\net6.0\ref\FrestyEcommerce.Client.dll
 C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Client\obj\Debug\net6.0\scopedcss\Shared\ProductList.razor.rz.scp.css
 C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Client\obj\Debug\net6.0\scopedcss\Pages\ProductDetails.razor.rz.scp.css
+C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Client\obj\Debug\net6.0\scopedcss\Shared\ShopLayout.razor.rz.scp.css
+C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Client\obj\Debug\net6.0\scopedcss\Shared\ShopNavMenu.razor.rz.scp.css
+C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Client\obj\Debug\net6.0\scopedcss\Shared\HomeButton.razor.rz.scp.css
