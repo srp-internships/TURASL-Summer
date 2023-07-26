@@ -836,3 +836,4 @@ C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\Fr
 C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Client\bin\Debug\net6.0\wwwroot\_framework\Blazored.LocalStorage.dll.gz
 C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Client\bin\Debug\net6.0\Blazored.LocalStorage.dll
 C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Client\obj\Debug\net6.0\build-gz\Ub6CRHG5.gz
+C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Client\obj\Debug\net6.0\scopedcss\Pages\Cart.razor.rz.scp.css
