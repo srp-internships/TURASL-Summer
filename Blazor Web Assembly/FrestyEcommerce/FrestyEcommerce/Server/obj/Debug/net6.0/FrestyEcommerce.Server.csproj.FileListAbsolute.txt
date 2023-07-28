@@ -110,3 +110,4 @@ C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\Fr
 C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Server\obj\Debug\net6.0\ref\FrestyEcommerce.Server.dll
 C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Server\bin\Debug\net6.0\Blazored.LocalStorage.dll
 C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Server\obj\Debug\net6.0\FrestyEcommerce.Server.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

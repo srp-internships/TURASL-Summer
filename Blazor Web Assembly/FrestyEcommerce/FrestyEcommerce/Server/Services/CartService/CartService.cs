@@ -1,15 +1,22 @@
-﻿using FrestyEcommerce.Shared.Dtos;
+﻿using FrestyEcommerce.Server.Migrations;
+using FrestyEcommerce.Shared;
+using FrestyEcommerce.Shared.Dtos;
+using System.Security.Claims;
 
 namespace FrestyEcommerce.Server.Services.CartService
 {
     public class CartService : ICartService
     {
         private readonly DataContext _context;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public CartService(DataContext context)
+        public CartService(DataContext context, IHttpContextAccessor httpContextAccessor)
         {
             _context = context;
+            _httpContextAccessor = httpContextAccessor;
         }
+
+        private int GetUserId() => int.Parse(_httpContextAccessor.HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier));
         public async Task<ServiceResponse<List<CartProductResponseDto>>> GetCartProducts(List<CartItem> cartItem)
         {
             var result = new ServiceResponse<List<CartProductResponseDto>>()
@@ -52,6 +59,85 @@ namespace FrestyEcommerce.Server.Services.CartService
             }
 
             return result;
+        }
+
+        public async Task<ServiceResponse<List<CartProductResponseDto>>> StoreCartItems(List<CartItem> cartItems)
+        {
+            cartItems.ForEach(cartItem => cartItem.UserId = GetUserId());
+            _context.CartItems.AddRange(cartItems);
+            await _context.SaveChangesAsync();
+
+            return await GetDbCartProducts();
+        }
+
+        public async Task<ServiceResponse<int>> GetCartItemsCount()
+        {
+            var count = (await _context.CartItems.Where(ci => ci.UserId == GetUserId()).ToListAsync()).Count;
+            return new ServiceResponse<int> { Data = count };
+        }
+
+        public async Task<ServiceResponse<List<CartProductResponseDto>>> GetDbCartProducts()
+        {
+            return await GetCartProducts(await _context.CartItems.Where(ci => ci.UserId == GetUserId()).ToListAsync());
+        }
+
+        public async Task<ServiceResponse<bool>> AddToCart(CartItem cartItem)
+        {
+            cartItem.UserId = GetUserId();
+
+            var sameItem = await _context.CartItems
+                .FirstOrDefaultAsync(ci => ci.ProductId == cartItem.ProductId &&
+                ci.ProductTypeId == cartItem.ProductTypeId &&
+                ci.UserId == cartItem.UserId
+                );
+
+            if(sameItem == null)
+            {
+                _context.CartItems.Add(cartItem);
+            }
+            else
+            {
+                sameItem.Quantity += cartItem.Quantity;
+            }
+
+            await _context.SaveChangesAsync();
+
+            return new ServiceResponse<bool> { Data = true };
+        }
+
+        public async Task<ServiceResponse<bool>> UpDateQuantity(CartItem cartItem)
+        {
+            var dbCartItem = await _context.CartItems
+                .FirstOrDefaultAsync(ci => ci.ProductId == cartItem.ProductId &&
+                ci.ProductTypeId == cartItem.ProductTypeId &&
+                ci.UserId == GetUserId()
+                );
+            if (dbCartItem == null)
+            {
+                return new ServiceResponse<bool> { Data = false, Message = "Cartitem does not exist.", Success = false };
+            }
+            dbCartItem.Quantity = cartItem.Quantity;
+            await _context.SaveChangesAsync();
+
+            return new ServiceResponse<bool>{ Data = true };
+        }
+
+        public async Task<ServiceResponse<bool>> RemoveItemFromCart(int productId, int productTypeId)
+        {
+            var dbCartItem = await _context.CartItems
+                .FirstOrDefaultAsync(ci => ci.ProductId == productId &&
+                ci.ProductTypeId == productTypeId &&
+                ci.UserId == GetUserId()
+                );
+            if (dbCartItem == null)
+            {
+                return new ServiceResponse<bool> { Data = false, Message = "Cartitem does not exist.", Success = false };
+            }
+
+            _context.CartItems.Remove(dbCartItem);
+            await _context.SaveChangesAsync();
+
+            return new ServiceResponse<bool> { Data = true };
         }
     }
 }

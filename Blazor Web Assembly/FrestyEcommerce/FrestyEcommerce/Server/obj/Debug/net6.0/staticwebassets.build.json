@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "M0AZCFvRrXqwOz58AAA5+Fu9v9BXgCTod5+U+XZPDxs=",
+  "Hash": "KzfgPqFnZ43Jkt1VlxvStLg0tje3UmbHHdnmSLbivrU=",
   "Source": "FrestyEcommerce.Server",
   "BasePath": "_content/FrestyEcommerce.Server",
   "Mode": "Default",
@@ -284,6 +284,23 @@
       "OriginalItemSpec": "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.19\\lib\\net6.0\\Microsoft.AspNetCore.Authorization.dll"
     },
     {
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll",
+      "SourceId": "FrestyEcommerce.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Authorization.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.components.authorization\\6.0.0\\lib\\net6.0\\Microsoft.AspNetCore.Components.Authorization.dll"
+    },
+    {
       "Identity": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
       "SourceId": "FrestyEcommerce.Client",
       "SourceType": "Project",
@@ -367,6 +384,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.metadata\\6.0.19\\lib\\net6.0\\Microsoft.AspNetCore.Metadata.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.WebUtilities.dll",
+      "SourceId": "FrestyEcommerce.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.WebUtilities.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.2.0\\lib\\netstandard2.0\\Microsoft.AspNetCore.WebUtilities.dll"
     },
     {
       "Identity": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.CSharp.dll",
@@ -656,6 +690,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Admin\\.nuget\\packages\\microsoft.jsinterop.webassembly\\6.0.19\\lib\\net6.0\\Microsoft.JSInterop.WebAssembly.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Net.Http.Headers.dll",
+      "SourceId": "FrestyEcommerce.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Net.Http.Headers.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Admin\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\lib\\netstandard2.0\\Microsoft.Net.Http.Headers.dll"
     },
     {
       "Identity": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.VisualBasic.Core.dll",
@@ -4517,6 +4568,23 @@
       "OriginalItemSpec": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Data.DataSetExtensions.dll"
     },
     {
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\obj\\Debug\\net6.0\\build-gz\\etW1+6M8.gz",
+      "SourceId": "FrestyEcommerce.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Net.Http.Headers.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Net.Http.Headers.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Net.Http.Headers.dll"
+    },
+    {
       "Identity": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\obj\\Debug\\net6.0\\build-gz\\eXX4B6Do.gz",
       "SourceId": "FrestyEcommerce.Client",
       "SourceType": "Project",
@@ -6047,6 +6115,23 @@
       "OriginalItemSpec": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.Security.dll"
     },
     {
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\obj\\Debug\\net6.0\\build-gz\\SmyLOu8F.gz",
+      "SourceId": "FrestyEcommerce.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.WebUtilities.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.WebUtilities.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.WebUtilities.dll"
+    },
+    {
       "Identity": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\obj\\Debug\\net6.0\\build-gz\\SYtWZD9b.gz",
       "SourceId": "FrestyEcommerce.Client",
       "SourceType": "Project",
@@ -6640,6 +6725,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Win32.Registry.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\obj\\Debug\\net6.0\\build-gz\\Y3VX5DIh.gz",
+      "SourceId": "FrestyEcommerce.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Authorization.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll"
     },
     {
       "Identity": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\obj\\Debug\\net6.0\\build-gz\\Y6zp0TR2.gz",
