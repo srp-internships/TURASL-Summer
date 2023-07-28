@@ -82,6 +82,54 @@ namespace FrestyEcommerce.Server.Migrations
                         });
                 });
 
+            modelBuilder.Entity("FrestyEcommerce.Shared.Order", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("OrderDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<decimal>("TotalPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("FrestyEcommerce.Shared.OrderItem", b =>
+                {
+                    b.Property<int>("OrderId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductTypeId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("TotalPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("OrderId", "ProductId", "ProductTypeId");
+
+                    b.HasIndex("ProductId");
+
+                    b.HasIndex("ProductTypeId");
+
+                    b.ToTable("OrderItems");
+                });
+
             modelBuilder.Entity("FrestyEcommerce.Shared.Product", b =>
                 {
                     b.Property<int>("Id")
@@ -455,6 +503,33 @@ namespace FrestyEcommerce.Server.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("FrestyEcommerce.Shared.OrderItem", b =>
+                {
+                    b.HasOne("FrestyEcommerce.Shared.Order", "Order")
+                        .WithMany("OrderItems")
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("FrestyEcommerce.Shared.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("FrestyEcommerce.Shared.ProductType", "ProductType")
+                        .WithMany()
+                        .HasForeignKey("ProductTypeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Order");
+
+                    b.Navigation("Product");
+
+                    b.Navigation("ProductType");
+                });
+
             modelBuilder.Entity("FrestyEcommerce.Shared.Product", b =>
                 {
                     b.HasOne("FrestyEcommerce.Shared.Category", "Category")
@@ -483,6 +558,11 @@ namespace FrestyEcommerce.Server.Migrations
                     b.Navigation("Product");
 
                     b.Navigation("ProductType");
+                });
+
+            modelBuilder.Entity("FrestyEcommerce.Shared.Order", b =>
+                {
+                    b.Navigation("OrderItems");
                 });
 
             modelBuilder.Entity("FrestyEcommerce.Shared.Product", b =>

@@ -804,10 +804,6 @@ C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\Fr
 C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Client\obj\Debug\net6.0\build-gz\NfWE6CbD.gz
 C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Client\obj\Debug\net6.0\build-gz\2fCUdXwC.gz
 C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Client\obj\Debug\net6.0\build-gz\ENZQLJMA.gz
-C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Client\obj\Debug\net6.0\build-gz\xk5EmKVa.gz
-C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Client\obj\Debug\net6.0\build-gz\hOQmx2l5.gz
-C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Client\obj\Debug\net6.0\build-gz\NMSm96n7.gz
-C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Client\obj\Debug\net6.0\build-gz\vGCDM+4k.gz
 C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Client\obj\Debug\net6.0\build-gz\eXX4B6Do.gz
 C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Client\obj\Debug\net6.0\blazor.boot.json
 C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Client\obj\Debug\net6.0\staticwebassets\msbuild.FrestyEcommerce.Client.Microsoft.AspNetCore.StaticWebAssets.props
@@ -850,3 +846,9 @@ C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\Fr
 C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Client\bin\Debug\net6.0\Microsoft.Net.Http.Headers.dll
 C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Client\obj\Debug\net6.0\build-gz\SmyLOu8F.gz
 C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Client\obj\Debug\net6.0\build-gz\etW1+6M8.gz
+C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Client\obj\Debug\net6.0\build-gz\xk5EmKVa.gz
+C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Client\obj\Debug\net6.0\build-gz\hOQmx2l5.gz
+C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Client\obj\Debug\net6.0\build-gz\NMSm96n7.gz
+C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Client\obj\Debug\net6.0\build-gz\vGCDM+4k.gz
+C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Client\obj\Debug\net6.0\scopedcss\Pages\Orders.razor.rz.scp.css
+C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Client\obj\Debug\net6.0\scopedcss\Pages\OrderDetails.razor.rz.scp.css
