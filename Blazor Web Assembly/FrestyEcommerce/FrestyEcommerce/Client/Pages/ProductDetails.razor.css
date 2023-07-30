@@ -26,6 +26,10 @@ img {
     max-width: 200px;
 }
 
+.original-price {
+    text-decoration: line-through;
+}
+
 @media (max-width: 1023) {
     .container {
         justify-content: flex-start;

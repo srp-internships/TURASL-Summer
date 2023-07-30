@@ -26,6 +26,10 @@ img[b-kkq2wenuy1] {
     max-width: 200px;
 }
 
+.original-price[b-kkq2wenuy1] {
+    text-decoration: line-through;
+}
+
 @media (max-width: 1023) {
     .container[b-kkq2wenuy1] {
         justify-content: flex-start;

@@ -1,3 +1,34 @@
+/* /Pages/Admin/Categories.razor.rz.scp.css */
+.header[b-mdbf9o8978] {
+    display: flex;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+}
+
+.row[b-mdbf9o8978] {
+    display: flex;
+    padding: 6px;
+}
+
+.col[b-mdbf9o8978] {
+    flex: 1;
+}
+
+.col-visible[b-mdbf9o8978] {
+    text-align: center;
+}
+/* /Pages/Admin/ProductTypes.razor.rz.scp.css */
+.row[b-y5ldqistf9] {
+    display: flex;
+    padding: 6px;
+}
+
+.col[b-y5ldqistf9] {
+    flex: 1;
+}
 /* /Pages/Cart.razor.rz.scp.css */
 .container[b-t1zsu6xowb] {
     display: flex;
@@ -125,6 +156,10 @@ img[b-kkq2wenuy1] {
     max-width: 200px;
 }
 
+.original-price[b-kkq2wenuy1] {
+    text-decoration: line-through;
+}
+
 @media (max-width: 1023) {
     .container[b-kkq2wenuy1] {
         justify-content: flex-start;
@@ -132,7 +167,7 @@ img[b-kkq2wenuy1] {
 }
 /* /Shared/AdminMenu.razor.rz.scp.css */
 .top-row a[b-550mdoulix] {
-    margin-left: 0px;
+    margin-left: 0!important;
 }
 
 .dropdown-item:hover[b-550mdoulix] {

@@ -20,10 +20,6 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/TURASL-Summer/Blazor Web Assembly/FrestyEcommerce/FrestyEcommerce/Client/Pages/Admin/Categories.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ2F0ZWdvcmllcy5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Admin/source/repos/TURASL-Summer/Blazor Web Assembly/FrestyEcommerce/FrestyEcommerce/Client/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -71,6 +67,14 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/Admin/source/repos/TURASL-Summer/Blazor Web Assembly/FrestyEcommerce/FrestyEcommerce/Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/source/repos/TURASL-Summer/Blazor Web Assembly/FrestyEcommerce/FrestyEcommerce/Client/Pages/Admin/Categories.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ2F0ZWdvcmllcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-mdbf9o8978
+
+[C:/Users/Admin/source/repos/TURASL-Summer/Blazor Web Assembly/FrestyEcommerce/FrestyEcommerce/Client/Pages/Admin/ProductTypes.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZHVjdFR5cGVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-y5ldqistf9
 
 [C:/Users/Admin/source/repos/TURASL-Summer/Blazor Web Assembly/FrestyEcommerce/FrestyEcommerce/Client/Pages/Cart.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FydC5yYXpvcg==
