@@ -852,3 +852,4 @@ C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\Fr
 C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Client\obj\Debug\net6.0\build-gz\vGCDM+4k.gz
 C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Client\obj\Debug\net6.0\scopedcss\Pages\Orders.razor.rz.scp.css
 C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Client\obj\Debug\net6.0\scopedcss\Pages\OrderDetails.razor.rz.scp.css
+C:\Users\Admin\source\repos\TURASL-Summer\Blazor Web Assembly\FrestyEcommerce\FrestyEcommerce\Client\obj\Debug\net6.0\scopedcss\Shared\AdminMenu.razor.rz.scp.css

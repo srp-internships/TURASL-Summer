@@ -130,6 +130,14 @@ img[b-kkq2wenuy1] {
         justify-content: flex-start;
     }
 }
+/* /Shared/AdminMenu.razor.rz.scp.css */
+.top-row a[b-550mdoulix] {
+    margin-left: 0px;
+}
+
+.dropdown-item:hover[b-550mdoulix] {
+    background-color: white;
+}
 /* /Shared/FeaturedProducts.razor.rz.scp.css */
 .container[b-pdmjwuiuv9] {
     display: flex;

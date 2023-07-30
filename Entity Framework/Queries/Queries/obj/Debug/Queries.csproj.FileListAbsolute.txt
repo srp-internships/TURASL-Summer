@@ -37,3 +37,18 @@ C:\Users\Admin\source\repos\Queries\Queries\obj\Debug\Queries.csproj.CoreCompile
 C:\Users\Admin\source\repos\Queries\Queries\obj\Debug\Queries.csproj.CopyComplete
 C:\Users\Admin\source\repos\Queries\Queries\obj\Debug\Queries.exe
 C:\Users\Admin\source\repos\Queries\Queries\obj\Debug\Queries.pdb
+C:\Users\Admin\source\repos\TURASL-Summer\Entity Framework\Queries\Queries\bin\Debug\Queries.exe.config
+C:\Users\Admin\source\repos\TURASL-Summer\Entity Framework\Queries\Queries\bin\Debug\Queries.exe
+C:\Users\Admin\source\repos\TURASL-Summer\Entity Framework\Queries\Queries\bin\Debug\Queries.pdb
+C:\Users\Admin\source\repos\TURASL-Summer\Entity Framework\Queries\Queries\bin\Debug\EntityFramework.dll
+C:\Users\Admin\source\repos\TURASL-Summer\Entity Framework\Queries\Queries\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\source\repos\TURASL-Summer\Entity Framework\Queries\Queries\bin\Debug\EntityFramework.xml
+C:\Users\Admin\source\repos\TURASL-Summer\Entity Framework\Queries\Queries\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\source\repos\TURASL-Summer\Entity Framework\Queries\Queries\obj\Debug\Queries.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\TURASL-Summer\Entity Framework\Queries\Queries\obj\Debug\Queries.csproj.SuggestedBindingRedirects.cache
+C:\Users\Admin\source\repos\TURASL-Summer\Entity Framework\Queries\Queries\obj\Debug\Queries.Migrations.InitialMigration.resources
+C:\Users\Admin\source\repos\TURASL-Summer\Entity Framework\Queries\Queries\obj\Debug\Queries.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\TURASL-Summer\Entity Framework\Queries\Queries\obj\Debug\Queries.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\TURASL-Summer\Entity Framework\Queries\Queries\obj\Debug\Queries.csproj.CopyComplete
+C:\Users\Admin\source\repos\TURASL-Summer\Entity Framework\Queries\Queries\obj\Debug\Queries.exe
+C:\Users\Admin\source\repos\TURASL-Summer\Entity Framework\Queries\Queries\obj\Debug\Queries.pdb
