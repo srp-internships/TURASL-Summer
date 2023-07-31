@@ -141,6 +141,28 @@ namespace FrestyEcommerce.Server.Migrations
                         });
                 });
 
+            modelBuilder.Entity("FrestyEcommerce.Shared.Image", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Data")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("ProductId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("Image");
+                });
+
             modelBuilder.Entity("FrestyEcommerce.Shared.Order", b =>
                 {
                     b.Property<int>("Id")
@@ -643,6 +665,13 @@ namespace FrestyEcommerce.Server.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("FrestyEcommerce.Shared.Image", b =>
+                {
+                    b.HasOne("FrestyEcommerce.Shared.Product", null)
+                        .WithMany("Images")
+                        .HasForeignKey("ProductId");
+                });
+
             modelBuilder.Entity("FrestyEcommerce.Shared.OrderItem", b =>
                 {
                     b.HasOne("FrestyEcommerce.Shared.Order", "Order")
@@ -707,6 +736,8 @@ namespace FrestyEcommerce.Server.Migrations
 
             modelBuilder.Entity("FrestyEcommerce.Shared.Product", b =>
                 {
+                    b.Navigation("Images");
+
                     b.Navigation("Variants");
                 });
 

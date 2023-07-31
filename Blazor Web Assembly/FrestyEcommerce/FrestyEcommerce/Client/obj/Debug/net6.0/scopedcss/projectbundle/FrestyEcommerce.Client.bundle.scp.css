@@ -20,6 +20,38 @@
 .col-visible[b-mdbf9o8978] {
     text-align: center;
 }
+/* /Pages/Admin/EditProduct.razor.rz.scp.css */
+img[b-g2f8hzesze] {
+    max-height: 200px;
+    max-width: 200px;
+}
+
+.row[b-g2f8hzesze] {
+    display: flex;
+    padding: 6px;
+}
+
+.col[b-g2f8hzesze] {
+    flex: 1;
+}
+
+.header[b-g2f8hzesze] {
+    display: flex;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+}
+
+.col-visible[b-g2f8hzesze] {
+    text-align: center;
+}
+/* /Pages/Admin/Products.razor.rz.scp.css */
+img[b-68nor7k6gd] {
+    max-height: 100px;
+    max-width: 100px;
+}
 /* /Pages/Admin/ProductTypes.razor.rz.scp.css */
 .row[b-y5ldqistf9] {
     display: flex;

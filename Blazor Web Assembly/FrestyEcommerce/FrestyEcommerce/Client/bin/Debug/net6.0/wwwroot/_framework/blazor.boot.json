@@ -200,15 +200,15 @@
       "mscorlib.dll": "sha256-j4L8eYEbpTL2UGB4uTT5qwkcqJsmB46NkVr5uesXgJI=",
       "netstandard.dll": "sha256-2M8m82GceNG8Z8I4dD74L7Tl4vwXdwXcVpYN80ouzQA=",
       "System.Private.CoreLib.dll": "sha256-dFxocfrY9q0E7UJ6nBlyNfnWYTyPu3RKzSggfRhoPJY=",
-      "FrestyEcommerce.Shared.dll": "sha256-p33+Onoaj9POU6komNpOOAOG4GmKrFvCyADciazptqs=",
-      "FrestyEcommerce.Client.dll": "sha256-RYam4kELmOICZ+KcQCzQdQalhXCVUNCxW\/TiGs4kLOw="
+      "FrestyEcommerce.Shared.dll": "sha256-8WBlqqfy3uIw2qs6KpVCjrq0H11UX0hj88+wuRun0Lo=",
+      "FrestyEcommerce.Client.dll": "sha256-\/A8JgiAA+Obkt2qhlg6fJnuRO\/F6H4OI1ooc8zzfONg="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "FrestyEcommerce.Shared.pdb": "sha256-E9zICHjZGk4KAxwR\/tbCOFmg86Wje7aiNAEnVdGeIMY=",
-      "FrestyEcommerce.Client.pdb": "sha256-wInD\/89o4Fb86Ed9XwylHlnAOGMp22I\/PFCqgZReKQw="
+      "FrestyEcommerce.Shared.pdb": "sha256-U4hwXKrHWmpgCRg3zaWcicenbS9bceMURAySXGNVA4E=",
+      "FrestyEcommerce.Client.pdb": "sha256-AVLP\/gg\/R8di+11NwLv+qGJ4QLBH8SpztFhFRDNX6Js="
     },
     "runtime": {
       "dotnet.6.0.20.urm042ods6.js": "sha256-iXtnf0CK+zdIWjR0cpE38tWChIpNC6sO+aSQAW+aBQU=",
