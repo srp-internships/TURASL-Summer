@@ -160,7 +160,7 @@ namespace FrestyEcommerce.Server.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("Image");
+                    b.ToTable("Images");
                 });
 
             modelBuilder.Entity("FrestyEcommerce.Shared.Order", b =>

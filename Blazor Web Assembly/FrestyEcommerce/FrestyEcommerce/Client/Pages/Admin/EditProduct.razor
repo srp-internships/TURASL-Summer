@@ -31,7 +31,7 @@ else
             <label for="imageUrl">Image Url</label>
             <InputText id="imageUrl" @bind-Value="product.ImageUrl" class="form-control"></InputText>
         </div>
-        <div class="mb-0">
+        <div class="mb-0" style="display:flex; flex-wrap:wrap;flex-direction:row;justify-content:center;">
             @if (!string.IsNullOrEmpty(product.ImageUrl))
             {
                 <img src="@product.ImageUrl" />
@@ -40,7 +40,20 @@ else
             {
                 @foreach (var image in product.Images)
                 {
-                    <img src="@image.Data" />
+                    @*<img src="@image.Data" />
+        <button type="button" @onclick="(() => RemoveImage(image.Id))">Remove</button>*@
+                    <MudCard Class="ma-2">
+                        <MudCardContent>
+                            <MudImage Src="@image.Data" />
+                        </MudCardContent>
+                        <MudCardActions Style="justify-content:center;">
+                            <MudButton Variant="Variant.Filled"
+                                       Color="Color.Error"
+                                       OnClick="@(()=>RemoveImage(image.Id))">
+                                Remove
+                            </MudButton>
+                        </MudCardActions>
+                    </MudCard>
                 }
             }
         </div>
@@ -96,7 +109,7 @@ else
             <InputSelect id="category" @bind-Value="product.CategoryId" class="form-control">
                 @foreach (var category in CategoryService.AdminCategories)
                 {
-                    <option value="category.Id">@category.Name</option>
+                    <option value="@category.Id">@category.Name</option>
                 }
             </InputSelect>
         </div>
@@ -182,7 +195,7 @@ else
     {
         if (product.IsNew)
         {
-            var reult = await ProductService.CreateProduct(product);
+            await ProductService.CreateProduct(product);
             NavigationManager.NavigateTo($"admin/product/{product.Id}");
         }
         else
@@ -213,6 +226,15 @@ else
             await resizedImage.OpenReadStream().ReadAsync(buffer);
             var imageData = $"data:{format};base64,{Convert.ToBase64String(buffer)}";
             product.Images.Add(new Image { Data = imageData });
+        }
+    }
+
+    void RemoveImage(int id)
+    {
+        var image = product.Images.FirstOrDefault(i => i.Id == id);
+        if (image != null)
+        {
+            product.Images.Remove(image);
         }
     }
 }

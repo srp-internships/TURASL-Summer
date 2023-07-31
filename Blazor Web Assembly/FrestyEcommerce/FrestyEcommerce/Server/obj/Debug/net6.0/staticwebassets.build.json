@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "40YDfzaXUHccWrpzdwE2MFfeXoBtTe11te2gkey0lUM=",
+  "Hash": "QjRNQEj3hiEHrwDOHLsESB+aPzq1EH/aV+8HP9sQi00=",
   "Source": "FrestyEcommerce.Server",
   "BasePath": "_content/FrestyEcommerce.Server",
   "Mode": "Default",
@@ -11,10 +11,10 @@
       "Version": 2,
       "Source": "FrestyEcommerce.Client",
       "GetPublishAssetsTargets": "ComputeFilesToPublish;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "BuildProjectReferences=false;ResolveAssemblyReferencesFindRelatedSatellites=true;_PublishingBlazorWasmProject=true",
+      "AdditionalPublishProperties": "BuildProjectReferences=false;ResolveAssemblyReferencesFindRelatedSatellites=true;_PublishingBlazorWasmProject=true;Configuration=Debug;Platform=AnyCPU",
       "AdditionalPublishPropertiesToRemove": "NoBuild;RuntimeIdentifier;WebPublishProfileFile;TargetFramework",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     }
   ],
@@ -28,6 +28,40 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\Admin\\.nuget\\packages\\mudblazor\\6.0.9\\staticwebassets\\MudBlazor.min.css",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\Admin\\.nuget\\packages\\mudblazor\\6.0.9\\staticwebassets\\",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Admin\\.nuget\\packages\\mudblazor\\6.0.9\\staticwebassets\\MudBlazor.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\.nuget\\packages\\mudblazor\\6.0.9\\staticwebassets\\MudBlazor.min.js",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\Admin\\.nuget\\packages\\mudblazor\\6.0.9\\staticwebassets\\",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Admin\\.nuget\\packages\\mudblazor\\6.0.9\\staticwebassets\\MudBlazor.min.js"
+    },
     {
       "Identity": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.boot.json",
       "SourceId": "FrestyEcommerce.Client",
@@ -199,6 +233,23 @@
       "OriginalItemSpec": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Shared\\bin\\Debug\\net6.0\\FrestyEcommerce.Shared.pdb"
     },
     {
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt.dat",
+      "SourceId": "FrestyEcommerce.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/icudt.dat",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "native",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.20\\runtimes\\browser-wasm\\native\\icudt.dat"
+    },
+    {
       "Identity": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt_CJK.dat",
       "SourceId": "FrestyEcommerce.Client",
       "SourceType": "Project",
@@ -248,23 +299,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.20\\runtimes\\browser-wasm\\native\\icudt_no_CJK.dat"
-    },
-    {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt.dat",
-      "SourceId": "FrestyEcommerce.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/icudt.dat",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "native",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.20\\runtimes\\browser-wasm\\native\\icudt.dat"
     },
     {
       "Identity": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
@@ -792,6 +826,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.20\\runtimes\\browser-wasm\\lib\\net6.0\\mscorlib.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\MudBlazor.dll",
+      "SourceId": "FrestyEcommerce.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/MudBlazor.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Admin\\.nuget\\packages\\mudblazor\\6.0.9\\lib\\net6.0\\MudBlazor.dll"
     },
     {
       "Identity": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\netstandard.dll",
@@ -6863,6 +6914,23 @@
       "OriginalItemSpec": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll"
     },
     {
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\obj\\Debug\\net6.0\\build-gz\\ZEakpbvO.gz",
+      "SourceId": "FrestyEcommerce.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/MudBlazor.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\MudBlazor.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\MudBlazor.dll"
+    },
+    {
       "Identity": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\obj\\Debug\\net6.0\\build-gz\\zGaWMrKm.gz",
       "SourceId": "FrestyEcommerce.Client",
       "SourceType": "Project",
@@ -7084,23 +7152,6 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
-      "SourceId": "FrestyEcommerce.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "css/open-iconic/FONT-LICENSE",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
-    },
-    {
       "Identity": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "FrestyEcommerce.Client",
       "SourceType": "Project",
@@ -7201,6 +7252,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "SourceId": "FrestyEcommerce.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/open-iconic/FONT-LICENSE",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
       "Identity": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\wwwroot\\css\\open-iconic\\ICON-LICENSE",

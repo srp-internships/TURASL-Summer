@@ -20,10 +20,10 @@ img[b-pdmjwuiuv9]{
 .featured-product[b-pdmjwuiuv9]{
     margin: 10px;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     border: 1px solid lightgray;
     border-radius: 10px;
-    max-width: 200px;
+    max-width: 300px;
 }
 
 @media (max-width: 1023) {

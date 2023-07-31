@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "9Gipbo8Bh6IOhDUeyzACsxGYZWMjjzxxg7OT5wEd41yeYbZ1p2bUVnEJBHVD03b28lvs9cyqnuc7VvSRQbqiSw==",
+  "dgSpecHash": "SPit2TGUJ5O9tMdDp6MpWeWZd16c5LM6YCDflKwFdsv+CCPYj2xTH2dSCHtDtFRQZiPhXTsmpz0Ya5dl5k5i7g==",
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\source\\repos\\TURASL-Summer\\Blazor Web Assembly\\FrestyEcommerce\\FrestyEcommerce\\Client\\FrestyEcommerce.Client.csproj",
   "expectedPackageFiles": [
@@ -32,6 +32,7 @@
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.jsinterop\\6.0.19\\microsoft.jsinterop.6.0.19.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.jsinterop.webassembly\\6.0.19\\microsoft.jsinterop.webassembly.6.0.19.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\mudblazor\\6.0.9\\mudblazor.6.0.9.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.io.pipelines\\6.0.3\\system.io.pipelines.6.0.3.nupkg.sha512",
